@@ -15,6 +15,9 @@
 		33569F3C151DBCFA00605257 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F3B151DBCFA00605257 /* AppDelegate.m */; };
 		33569F3F151DBCFA00605257 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F3E151DBCFA00605257 /* ViewController.m */; };
 		33569F42151DBCFA00605257 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33569F40151DBCFA00605257 /* ViewController.xib */; };
+		33569F49151DBD4B00605257 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33569F48151DBD4B00605257 /* CFNetwork.framework */; };
+		33569F4E151DBD9800605257 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F4B151DBD9800605257 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		33569F4F151DBD9800605257 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 33569F4D151DBD9800605257 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +25,20 @@
 		33569F2B151DBCF900605257 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		33569F2D151DBCF900605257 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		33569F2F151DBCF900605257 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		33569F33151DBCF900605257 /* zxSocket-Info.plist */ = {isa = PBXFileReference; path = "zxSocket-Info.plist"; sourceTree = "<group>"; };
+		33569F33151DBCF900605257 /* zxSocket-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "zxSocket-Info.plist"; sourceTree = "<group>"; };
 		33569F35151DBCF900605257 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		33569F37151DBCF900605257 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		33569F39151DBCFA00605257 /* zxSocket-Prefix.pch */ = {isa = PBXFileReference; path = "zxSocket-Prefix.pch"; sourceTree = "<group>"; };
-		33569F3A151DBCFA00605257 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		33569F39151DBCFA00605257 /* zxSocket-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "zxSocket-Prefix.pch"; sourceTree = "<group>"; };
+		33569F3A151DBCFA00605257 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		33569F3B151DBCFA00605257 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		33569F3D151DBCFA00605257 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		33569F3D151DBCFA00605257 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		33569F3E151DBCFA00605257 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		33569F41151DBCFA00605257 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		33569F48151DBD4B00605257 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		33569F4A151DBD9800605257 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		33569F4B151DBD9800605257 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		33569F4C151DBD9800605257 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		33569F4D151DBD9800605257 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33569F49151DBD4B00605257 /* CFNetwork.framework in Frameworks */,
 				33569F2C151DBCF900605257 /* UIKit.framework in Frameworks */,
 				33569F2E151DBCF900605257 /* Foundation.framework in Frameworks */,
 				33569F30151DBCF900605257 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +59,7 @@
 		33569F1C151DBCF900605257 = {
 			isa = PBXGroup;
 			children = (
+				33569F48151DBD4B00605257 /* CFNetwork.framework */,
 				33569F31151DBCF900605257 /* zxSocket */,
 				33569F2A151DBCF900605257 /* Frameworks */,
 				33569F28151DBCF900605257 /* Products */,
@@ -77,6 +87,10 @@
 		33569F31151DBCF900605257 /* zxSocket */ = {
 			isa = PBXGroup;
 			children = (
+				33569F4A151DBD9800605257 /* GCDAsyncSocket.h */,
+				33569F4B151DBD9800605257 /* GCDAsyncSocket.m */,
+				33569F4C151DBD9800605257 /* GCDAsyncUdpSocket.h */,
+				33569F4D151DBD9800605257 /* GCDAsyncUdpSocket.m */,
 				33569F3A151DBCFA00605257 /* AppDelegate.h */,
 				33569F3B151DBCFA00605257 /* AppDelegate.m */,
 				33569F3D151DBCFA00605257 /* ViewController.h */,
@@ -164,6 +178,8 @@
 				33569F38151DBCF900605257 /* main.m in Sources */,
 				33569F3C151DBCFA00605257 /* AppDelegate.m in Sources */,
 				33569F3F151DBCFA00605257 /* ViewController.m in Sources */,
+				33569F4E151DBD9800605257 /* GCDAsyncSocket.m in Sources */,
+				33569F4F151DBD9800605257 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +256,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zxSocket/zxSocket-Prefix.pch";
 				INFOPLIST_FILE = "zxSocket/zxSocket-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -251,6 +268,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "zxSocket/zxSocket-Prefix.pch";
 				INFOPLIST_FILE = "zxSocket/zxSocket-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -275,6 +293,7 @@
 				33569F47151DBCFA00605257 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
